@@ -16,10 +16,6 @@ request(url, function(error, response, body) {
   termDate = $("div.listType99 ul li strong");
 
   elements.each(function(){
-     console.log($(this).find("img").attr('src'));
-     console.log($(this).find("span.tit img").attr('src'));
-     console.log($(this).find("span.txt").text());
-
      img.push($(this).find("img").attr('src'));
      alt.push($(this).find("span.tit img").attr('alt'));
      description.push($(this).find("span.txt").text());
