@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<body>
+  <div class="container">
+<h4 style="text-align:center;">
+<strong>
+<%= termDate.text().substring(0,10) %> ~
+<%= termDate.text().substring(10) %>
+<strong>
+</h4>
+    <table class="table">
+<%
+    for(var i = 0; i < img.length; i++) {
+%>
+      <tr>
+        <td>
+          <img src="http://www.elle.co.kr/<%=img[i]%>"/>
+          <div><strong><%=alt[i]%></strong></div>
+          <div><%=description[i]%></div>
+        </td>
+      </tr>
+<%
+    }
+%>
+    </table>
+  </div>
+</body>
+</html>

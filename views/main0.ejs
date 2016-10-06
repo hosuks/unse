@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<body>
+  <div class="container">
+<h4>
+<%= termDate.text().substring(0,10) %> ~
+<%= termDate.text().substring(10) %>
+</h4>
+    <table class="table">
+<%
+        var count = 0;
+        for(var i = 0; i < 6; i++) {
+%>
+      <tr>
+<%
+          for(var j = 0; j < 2; j++) {
+%>
+        <td>
+          <a href=""><img src="http://www.elle.co.kr/<%=img[count]%>"/></a>
+          <div><%=alt[count]%></div>
+        </td>
+<%
+            count++;
+          }
+%>
+      </tr>
+<%
+
+      }
+%>
+    </table>
+    <!-- <ul>
+    <% for(var i=0; i<img.length; i++) { %>
+        <li><img src="http://www.elle.co.kr/<%=img[i]%>"/></li>
+        <li><%=alt[i]%></li>
+        <li><%=description[i]%></li>
+    <% } %>
+    </ul> -->
+  </div>
+</body>
+</html>
