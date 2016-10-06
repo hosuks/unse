@@ -33,10 +33,6 @@ app.get("/", function(req, res){
   res.render("main", {img:img, alt:alt, description:description, termDate:termDate});
 });
 
-app.get("/sub", function(req, res){
-  res.render("sub", {description:description});
-});
-
 app.listen(5000, function(){
    console.log('Server On!');
 });
