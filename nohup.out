@@ -1,0 +1,38 @@
+[33m[nodemon] 1.11.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node index.js`[39m
+
+stream.js:94
+      throw er; // Unhandled stream error in pipe.
+            ^
+Error: EBADF, read
+[33m[nodemon] 1.11.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node index.js`[39m
+
+stream.js:94
+      throw er; // Unhandled stream error in pipe.
+            ^
+Error: EBADF, read
+[33m[nodemon] 1.11.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node index.js`[39m
+
+stream.js:94
+      throw er; // Unhandled stream error in pipe.
+            ^
+Error: EBADF, read
+[33m[nodemon] 1.11.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node index.js`[39m
+
+stream.js:94
+      throw er; // Unhandled stream error in pipe.
+            ^
+Error: EBADF, read
+hello
+Server On!
