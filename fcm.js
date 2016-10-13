@@ -4,7 +4,7 @@ var schedule = require("node-schedule");
 var Unse = require("./models/Unse");
 var FCM = require('fcm-node');
 
-var j = schedule.scheduleJob('1 * * * *', function(){
+var j = schedule.scheduleJob('1 * * * * *', function(){
   mongoose.connect(process.env.MONGO_DB); // 1
   var db = mongoose.connection;
 
