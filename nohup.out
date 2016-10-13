@@ -36,3 +36,66 @@ stream.js:94
 Error: EBADF, read
 hello
 Server On!
+Server On!
+DB connected
+token === f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+title === 푸쉬푸쉬베이베
+message === 아이원츄베이베
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":4879505231109900002,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476266278254935%ff5930bbff5930bb"}]}
+title === 푸쉬푸쉬베이베
+message === 아이원츄베이베
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":5238748554861715569,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476266299011976%ff5930bbff5930bb"}]}
+title === 푸쉬푸쉬베이베
+message === 아이원츄베이베
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":6611944270246247985,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476266309914842%ff5930bbff5930bb"}]}
+title === asdfasdf
+message === wefwefew
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":7511173049040614388,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476266481312722%ff5930bbff5930bb"}]}
+title === TEST
+message === 1234
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":6832090544976964424,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476320765116834%ff5930bbff5930bb"}]}
+title === undefined
+message === 내용이지요.
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":8750857071837590918,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476324604187506%ff5930bbff5930bb"}]}
+title === undefined
+message === 내용이지요.
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":7466908214246126810,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476324616864610%ff5930bbff5930bb"}]}
+title === undefined
+message === ㅇㄹ
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":9133506479538197551,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476324651763273%ff5930bbff5930bb"}]}
+title === undefined
+message === ㅇㄹ
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":7346755334538435459,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476324750683239%ff5930bbff5930bb"}]}
+title === undefined
+message === ㅇㄹ
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":6767387373949078238,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476324785437008%ff5930bbff5930bb"}]}
+title === undefined
+message === 
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":9176422828510819264,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476325013858072%ff5930bbff5930bb"}]}
+title === undefined
+message === 
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":6467420200370211468,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476325022623855%ff5930bbff5930bb"}]}
+title === undefined
+message === 
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":6527166849298521635,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476325061788629%ff5930bbff5930bb"}]}
+title === undefined
+message === wefwef
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":5400382466459916561,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476325074923137%ff5930bbff5930bb"}]}
+title === undefined
+message === ㅇㄹ
+f6rqSghR8v8:APA91bHGcWYX--OimO9MhN-l2WrdKhW3L7iTdqD7VvScWXCTily1D5Y9Y_wqPYsRmVUgoVB9kbrFibo7Qtr7WC71xrxOVB8WUKJVUIxwBE9IohbaD4uaN5__OkNGHISIxtpKouoR-oMO
+Successfully sent with response:  {"multicast_id":8031426349330505840,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476325324822107%ff5930bbff5930bb"}]}
