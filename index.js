@@ -82,8 +82,8 @@ app.post("/fcm/send", function(req, res){
           collapse_key: 'your_collapse_key',
 
           notification: {
-              title: title,
-              body: message
+            title: 'Title of your push notification',
+            body: 'Body of your push notification'
           },
 
           data: {  //you can send only notification or only data(or include both)
