@@ -52,17 +52,17 @@ app.post("/fcm/send", function(req, res){
   app.use(bodyParser.urlencoded({ extended: false })); // support encoded bodies
   var token = new Array();
   var title = req.body.title;
-  var message = req.body.message;
+  var msg = req.body.message;
 
   console.log('title === ' + title);
-  console.log('message === ' + message);
+  console.log('msg === ' + msg);
 
   if (title == null || title == '') {
     title = '주간 별자리 운세';
   }
 
-  if (message == null || message == '') {
-    message = '테스트 메세지 입니다.';
+  if (msg == null || msg == '') {
+    msg = '테스트 메세지 입니다.';
   }
 
   Unse.find({}, function(err, unse){
@@ -83,7 +83,7 @@ app.post("/fcm/send", function(req, res){
 
           notification: {
               title: title,
-              body: message
+              body: msg
           },
 
           data: {  //you can send only notification or only data(or include both)
