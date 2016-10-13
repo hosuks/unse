@@ -1,27 +1,53 @@
+var bodyParser = require("body-parser");
+var mongoose = require("mongoose");
+var schedule = require("node-schedule");
+var Unse = require("./models/Unse");
 var FCM = require('fcm-node');
 
-var serverKey = 'AIzaSyDp0xta1drbJbd1HhzxsaSTTZ-xakTM4_I';
-var fcm = new FCM(serverKey);
+var j = schedule.scheduleJob('1 * * * *', function(){
+  mongoose.connect(process.env.MONGO_DB); // 1
+  var db = mongoose.connection;
 
-var message = { //this may vary according to the message type (single recipient, multicast, topic, et cetera)
-    to: 'd1N3gl9-mTE:APA91bG977lJd3SvuxvqnvoviN-IU2-5DhPAIsI7vaqio1DLtj4jjff6l0ilDpfDm5rBNm7WCxpMOjJO5UlaxgmrYtsNu9S8hwPPVdhCa8xco8jcwUR-6U6WsHUyazfg8M_8G55bCrgU',
-    collapse_key: 'your_collapse_key',
+  db.once("open", function(){
+    console.log("DB connected");
+  });
+  db.on("error", function(err){
+    console.log("DB ERROR : ", err);
+  });
 
-    notification: {
-        title: 'TEST~~',
-        body: '베이비'
-    },
+  var token = new Array();
 
-    data: {  //you can send only notification or only data(or include both)
-        my_key: 'my value',
-        my_another_key: 'my another value'
+  Unse.find({}, function(err, unse){
+    unse.forEach(function(data){
+      token.push(data.token);
+    });
+
+    var serverKey = 'AIzaSyDp0xta1drbJbd1HhzxsaSTTZ-xakTM4_I';
+    var fcm = new FCM(serverKey);
+
+    for(var i = 0; i < token.length; i++) {
+      var message = { //this may vary according to the message type (single recipient, multicast, topic, et cetera)
+          to: token[i],
+          collapse_key: 'your_collapse_key',
+
+          notification: {
+              title: '주간 별자리 운세',
+              body: '한주간의 운세를 확인하세요.'
+          },
+
+          data: {  //you can send only notification or only data(or include both)
+              my_key: 'my value',
+              my_another_key: 'my another value'
+          }
+      };
+
+      fcm.send(message, function(err, response){
+          if (err) {
+              console.log("Something has gone wrong!");
+          } else {
+              console.log("Successfully sent with response: ", response);
+          }
+      });
     }
-};
-
-fcm.send(message, function(err, response){
-    if (err) {
-        console.log("Something has gone wrong!");
-    } else {
-        console.log("Successfully sent with response: ", response);
-    }
+  });
 });
