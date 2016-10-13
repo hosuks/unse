@@ -58,7 +58,7 @@ app.post("/fcm/send", function(req, res){
   console.log('message === ' + message);
 
   if (title == null || title == '') {
-    title = '주간 별자리 운세';
+    title = '주간 별자리 운세~!';
   }
 
   if (message == null || message == '') {
