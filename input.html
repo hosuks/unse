@@ -1,10 +1,41 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <html>
-  <head></head>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#btnSubmit').click(function(){
+            if (confirm("메세지를 전송하시겠습니까?")) {
+                $('#fcmForm').submit();
+                return false;
+            }
+        });
+      });
+    </script>
+  </head>
   <body>
-    <form method="post" action="http://ec2-52-78-110-63.ap-northeast-2.compute.amazonaws.com:5000/fcm/send">
-      <input type="text" name="title">
-      <input type="text" name="message">
-      <input type="submit" value="send"/>
-    </form>
+    <div class="container">
+      <form id="fcmForm" method="post" action="http://ec2-52-78-110-63.ap-northeast-2.compute.amazonaws.com:5000/fcm/send">
+        <div class="form-group">
+          <label>title</label>
+          <input type="text" class="form-control" iname="title" placeholder="제목을 입력하세요.">
+        </div>
+        <div class="form-group">
+          <label>message</label>
+          <input type="text" class="form-control" name="message" placeholder="내용을 입력하세요.">
+        </div>
+        <input type="button" id="btnSubmit" class="btn btn-default" value="Submit"/>
+      </form>
+    </div>
   </body>
 </html>
