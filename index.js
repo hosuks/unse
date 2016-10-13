@@ -58,7 +58,7 @@ app.post("/fcm/send", function(req, res){
   console.log('message === ' + message);
 
   if (title == null || title == '') {
-    title = '주간 별자리 운세~!';
+    title = '주간 별자리 운세';
   }
 
   if (message == null || message == '') {
@@ -82,8 +82,8 @@ app.post("/fcm/send", function(req, res){
           collapse_key: 'your_collapse_key',
 
           notification: {
-            title: 'Title of your push notification',
-            body: 'Body of your push notification'
+              title: title,
+              body: message
           },
 
           data: {  //you can send only notification or only data(or include both)
