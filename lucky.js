@@ -41,6 +41,6 @@ app.get("/lucky", function(req, res){
     res.render("lucky", {oneLineTxt:oneLineArr, yearsTxt:yearsArr, descriptionTxt:descriptionArr, moment:moment});
 });
 
-app.listen(9000, function(){
-   console.log('9000 port Server On!');
+app.listen(8080, function(){
+   console.log('8080 port Server On!');
 });
