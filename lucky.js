@@ -37,7 +37,7 @@ request(url, function(error, response, body) {
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
 
-app.get("/", function(req, res){
+app.get("/lucky", function(req, res){
     res.render("lucky", {oneLineTxt:oneLineArr, yearsTxt:yearsArr, descriptionTxt:descriptionArr, moment:moment});
 });
 
