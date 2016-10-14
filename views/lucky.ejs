@@ -11,7 +11,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <body>
   <div class="container">
-    <h4 style="color:#22741C"><%= moment().format('MM');%>월 <%= moment().format('DD');%>일 운세입니다.</h4>
+    <h4 style="color:#22741C;text-align:center;"><%= moment().format('MM');%>월 <%= moment().format('DD');%>일 운세입니다.</h4>
     <table class="table">
 <%
     for(var i = 10; i < oneLineTxt.length; i++) {
@@ -27,7 +27,7 @@
 
 %>
                 <div>
-                    <strong style="color:#CC3D3D"><%=yearsTxt[i * 4 + j]%></strong>
+                    <strong style="color:#5D5D5D"><%=yearsTxt[i * 4 + j]%></strong>
                     <%=descriptionTxt[i * 4 + j]%>
                 </div>
 <%
@@ -54,7 +54,7 @@
 
 %>
                 <div>
-                    <strong style="color:#CC3D3D"><%=yearsTxt[i * 4 + j]%></strong>
+                    <strong style="color:#5D5D5D"><%=yearsTxt[i * 4 + j]%></strong>
                     <%=descriptionTxt[i * 4 + j]%>
                 </div>
 <%
