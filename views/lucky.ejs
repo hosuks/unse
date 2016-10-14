@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<body>
+  <div class="container">
+    <h4 style="color:#22741C"><%= moment().format('MM');%>월 <%= moment().format('DD');%>일 운세입니다.</h4>
+    <table class="table">
+<%
+    for(var i = 10; i < oneLineTxt.length; i++) {
+%>
+        <tr>
+            <td>
+                <img src="/lucky/images/gi_<%= i-9 %>_1.gif"/>
+                <div style="color:red;">
+                    <strong><%=oneLineTxt[i]%></strong>
+                </div>
+<%
+        for(var j = 0; j < 4; j++) {
+
+%>
+                <div>
+                    <strong style="color:#CC3D3D"><%=yearsTxt[i * 4 + j]%></strong>
+                    <%=descriptionTxt[i * 4 + j]%>
+                </div>
+<%
+        }
+%>
+            </td>
+        </tr>
+<%
+    }
+%>
+
+
+<%
+    for(var i = 0; i < oneLineTxt.length-2; i++) {
+%>
+        <tr>
+            <td>
+                <img src="/lucky/images/gi_<%= i+3 %>_1.gif"/>
+                <div style="color:red;">
+                    <strong><%=oneLineTxt[i]%></strong>
+                </div>
+<%
+        for(var j = 0; j < 4; j++) {
+
+%>
+                <div>
+                    <strong style="color:#CC3D3D"><%=yearsTxt[i * 4 + j]%></strong>
+                    <%=descriptionTxt[i * 4 + j]%>
+                </div>
+<%
+        }
+%>
+            </td>
+        </tr>
+<%
+    }
+%>
+    </table>
+  </div>
+</body>
+</html>
