@@ -37,10 +37,10 @@ request(url, function(error, response, body) {
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
 
-app.get("/lucky", function(req, res){
+app.get("/", function(req, res){
     res.render("lucky", {oneLineTxt:oneLineArr, yearsTxt:yearsArr, descriptionTxt:descriptionArr, moment:moment});
 });
 
-app.listen(8080, function(){
-   console.log('8080 port Server On!');
+app.listen(5001, function(){
+   console.log('5001 port Server On!');
 });
