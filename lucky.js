@@ -87,8 +87,8 @@ app.post("/fcm/send", function(req, res){
     msg = '오늘은 어떤 운세가 기다리고 있을까요?';
   }
 
-  Unse.find({}, function(err, unse){
-    unse.forEach(function(data){
+  Lucky.find({}, function(err, lucky){
+    lucky.forEach(function(data){
       token.push(data.token);
     });
 
