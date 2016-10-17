@@ -4,7 +4,7 @@ var schedule = require("node-schedule");
 var Lucky = require("./models/Lucky");
 var FCM = require('fcm-node');
 
-//var j = schedule.scheduleJob('0 8 * * *', function(){
+var j = schedule.scheduleJob('0 8 * * *', function(){
   mongoose.connect(process.env.MONGO_DB); // 1
   var db = mongoose.connection;
 
@@ -50,4 +50,4 @@ var FCM = require('fcm-node');
       });
     }
   });
-//});
+});
