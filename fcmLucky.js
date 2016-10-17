@@ -32,7 +32,7 @@ var j = schedule.scheduleJob('0 8 * * *', function(){
 
           notification: {
               title: '오늘의 띠별 운세',
-              body: '하루의 운세를 확인하세요.'
+              body: '오늘은 어떤 운세가 기다리고 있을까요?'
           },
 
           data: {  //you can send only notification or only data(or include both)
