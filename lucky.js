@@ -68,6 +68,63 @@ app.post("/fcm/register", function(req, res){
   console.log("token === " + req.body.token);
 });
 
+//-- 수동 푸쉬 발송
+app.post("/fcm/send", function(req, res){
+
+  app.use(bodyParser.urlencoded({ extended: false })); // support encoded bodies
+  var token = new Array();
+  var title = req.body.title;
+  var msg = req.body.message;
+
+  console.log('title === ' + title);
+  console.log('msg === ' + msg);
+
+  if (title == null || title == '') {
+    title = '오늘의 띠별 운세';
+  }
+
+  if (msg == null || msg == '') {
+    msg = '오늘은 어떤 운세가 기다리고 있을까요?';
+  }
+
+  Unse.find({}, function(err, unse){
+    unse.forEach(function(data){
+      token.push(data.token);
+    });
+
+    var FCM = require('fcm-node');
+
+    var serverKey = 'AIzaSyA4nFElRbVC_p41I2UHfHAtb8FxZWoeZU4';
+    var fcm = new FCM(serverKey);
+
+    for(var i = 0; i < token.length; i++) {
+      console.log(token[i]);
+      var message = { //this may vary according to the message type (single recipient, multicast, topic, et cetera)
+          to: token[i],
+          collapse_key: 'your_collapse_key',
+
+          notification: {
+              title: title,
+              body: msg
+          },
+
+          data: {  //you can send only notification or only data(or include both)
+              my_key: 'my value',
+              my_another_key: 'my another value'
+          }
+      };
+
+      fcm.send(message, function(err, response){
+          if (err) {
+              console.log("Something has gone wrong!");
+          } else {
+              console.log("Successfully sent with response: ", response);
+          }
+      });
+    }
+  });
+});
+
 app.listen(5001, function(){
    console.log('5001 port Server On!');
 });

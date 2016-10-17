@@ -46,7 +46,7 @@ app.get("/", function(req, res){
   res.render("main", {img:img, alt:alt, description:description, termDate:termDate});
 });
 
-//-- 푸쉬 발송
+//-- 수동 푸쉬 발송
 app.post("/fcm/send", function(req, res){
 
   app.use(bodyParser.urlencoded({ extended: false })); // support encoded bodies
