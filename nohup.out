@@ -181,3 +181,119 @@ Something has gone wrong!
 9000 port Server On!
 Server On!
 DB connected
+Server On!
+DB connected
+5001 port Server On!
+8080 port Server On!
+DB connected
+Something has gone wrong!
+Something has gone wrong!
+Something has gone wrong!
+Successfully sent with response:  {"multicast_id":5972059516136664383,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476432003606832%ff5930bbff5930bb"}]}
+token === cZRgyZxrIDw:APA91bEUTiv1dbgJ_K32kEFDPQVao_BRnQA4bNMxQ-3z-EcZhrjGbngXDG9Dczq4VJ0ZcqNbCpWue_p2vGC4jAKQQzZ8OWyeouTNI_sxoyqqIXwsgEuM8MA8YJkatEKDLe3ivwbC2-mL
+token === cgRAG_8Gq44:APA91bFd8XCN0S05lOLGduBaoWdnwxXXCeNK2OW31GuuR9IgpxIdP6VvuGIYmce92u91VCxEhSWweEKU4g60-h4qjqe6L1PqOrrlHtON3GiwX6KO-e3oZwNX6iMxpYs-z7cdD0nn6_QO
+DB ERROR :  { [Error: Trying to open unclosed connection.] state: 1 }
+Successfully sent with response:  {"multicast_id":8543622152400827644,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476518400926361%ff5930bbff5930bb"}]}
+token === fAQzWoMRImg:APA91bGU5yJ05ae0HH83-820bdQ-NxFEGeCPB2OJVu1o05zk__DsPykVP1CfE20vIXz16B1WLbYbBZBGETW1GBfJEQmSV8_RGUHFdMTgrMRnxiND-a8RfbW6d4l7C95tuRqAH5U5KQ3K
+DB ERROR :  [Error: connection timeout]
+DB ERROR :  [Error: connection timeout]
+DB ERROR :  { [Error: Trying to open unclosed connection.] state: 1 }
+DB ERROR :  { [Error: Trying to open unclosed connection.] state: 1 }
+Successfully sent with response:  {"multicast_id":6372543487342621679,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476604800920747%ff5930bbff5930bb"}]}
+Successfully sent with response:  {"multicast_id":7376284402095070623,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476604800922942%ff5930bbff5930bb"}]}
+token === ccDYm3v4aVY:APA91bEbzdcXDOMi7j-zH_YO7Umn6L55M_PONty5kqYhdwcsI2GDMe6Le1b1nEX74HfsdD5aunHibFxzihcZBHb1Kuz-PNwKroNlGBIyV9pd3D4SDAmfZGQfAlBOoo3hKZWxDmnXieDQ
+Server On!
+DB connected
+8080 port Server On!
+title === 주간 별자리 운세
+msg === 만숙아 오늘도 화이팅해라~~!!
+cgRAG_8Gq44:APA91bFd8XCN0S05lOLGduBaoWdnwxXXCeNK2OW31GuuR9IgpxIdP6VvuGIYmce92u91VCxEhSWweEKU4g60-h4qjqe6L1PqOrrlHtON3GiwX6KO-e3oZwNX6iMxpYs-z7cdD0nn6_QO
+fAQzWoMRImg:APA91bGU5yJ05ae0HH83-820bdQ-NxFEGeCPB2OJVu1o05zk__DsPykVP1CfE20vIXz16B1WLbYbBZBGETW1GBfJEQmSV8_RGUHFdMTgrMRnxiND-a8RfbW6d4l7C95tuRqAH5U5KQ3K
+ccDYm3v4aVY:APA91bEbzdcXDOMi7j-zH_YO7Umn6L55M_PONty5kqYhdwcsI2GDMe6Le1b1nEX74HfsdD5aunHibFxzihcZBHb1Kuz-PNwKroNlGBIyV9pd3D4SDAmfZGQfAlBOoo3hKZWxDmnXieDQ
+Something has gone wrong!
+Successfully sent with response:  {"multicast_id":8830629902258403055,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476668979002698%ff5930bbff5930bb"}]}
+Successfully sent with response:  {"multicast_id":6810258191105134994,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476668979000526%ff5930bbff5930bb"}]}
+Server On!
+DB connected
+5001 port Server On!
+DB connected
+[33m[nodemon] 1.11.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node lucky.js`[39m
+
+stream.js:94
+      throw er; // Unhandled stream error in pipe.
+            ^
+Error: EBADF, read
+[33m[nodemon] 1.11.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node lucky.js`[39m
+
+stream.js:94
+      throw er; // Unhandled stream error in pipe.
+            ^
+Error: EBADF, read
+5001 port Server On!
+DB connected
+title === 푸쉬푸쉬
+msg === 아하아하
+ReferenceError: Unse is not defined
+    at /home/ec2-user/hosuks/unse/lucky.js:90:3
+    at Layer.handle [as handle_request] (/home/ec2-user/hosuks/unse/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ec2-user/hosuks/unse/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/home/ec2-user/hosuks/unse/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ec2-user/hosuks/unse/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ec2-user/hosuks/unse/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/home/ec2-user/hosuks/unse/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ec2-user/hosuks/unse/node_modules/express/lib/router/index.js:271:10)
+    at serveStatic (/home/ec2-user/hosuks/unse/node_modules/express/node_modules/serve-static/index.js:75:16)
+    at Layer.handle [as handle_request] (/home/ec2-user/hosuks/unse/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ec2-user/hosuks/unse/node_modules/express/lib/router/index.js:312:13)
+    at /home/ec2-user/hosuks/unse/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ec2-user/hosuks/unse/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ec2-user/hosuks/unse/node_modules/express/lib/router/index.js:271:10)
+    at /home/ec2-user/hosuks/unse/node_modules/body-parser/lib/read.js:129:5
+    at invokeCallback (/home/ec2-user/hosuks/unse/node_modules/body-parser/node_modules/raw-body/index.js:262:16)
+5001 port Server On!
+DB connected
+title === 푸쉬푸쉬
+msg === 아하아하
+title === dfasdfasdf
+msg === asdfas
+title === wefwefwe
+msg === fwefwefwef
+token === fIk-KGiCIQM:APA91bFXZMkonzh2QDYBJwl-1PZJARvYkQfrJEvzezJAeezDyEtC975IkkOa_K4_zQ0fyRkTR5oNZL3lGm6J4zb0pfqqmf9BOjpwA77m2M1lQsEmmrk-lIdwvOiFvZKEfUh46jsRbEtM
+title === 아하아하
+msg === 오호오호
+fIk-KGiCIQM:APA91bFXZMkonzh2QDYBJwl-1PZJARvYkQfrJEvzezJAeezDyEtC975IkkOa_K4_zQ0fyRkTR5oNZL3lGm6J4zb0pfqqmf9BOjpwA77m2M1lQsEmmrk-lIdwvOiFvZKEfUh46jsRbEtM
+Successfully sent with response:  {"multicast_id":5191515997016266723,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476698714942292%eb5106d8eb5106d8"}]}
+title === ㅈㄹㅈㄷㄹㅈㄷㄹ
+msg === ㅈㄹㅈㄷㄹㅈㄷㄹ
+fIk-KGiCIQM:APA91bFXZMkonzh2QDYBJwl-1PZJARvYkQfrJEvzezJAeezDyEtC975IkkOa_K4_zQ0fyRkTR5oNZL3lGm6J4zb0pfqqmf9BOjpwA77m2M1lQsEmmrk-lIdwvOiFvZKEfUh46jsRbEtM
+Successfully sent with response:  {"multicast_id":8054941566635024872,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476698749482456%eb5106d8eb5106d8"}]}
+title === 아하아하
+msg === 오호오호!!
+fIk-KGiCIQM:APA91bFXZMkonzh2QDYBJwl-1PZJARvYkQfrJEvzezJAeezDyEtC975IkkOa_K4_zQ0fyRkTR5oNZL3lGm6J4zb0pfqqmf9BOjpwA77m2M1lQsEmmrk-lIdwvOiFvZKEfUh46jsRbEtM
+Successfully sent with response:  {"multicast_id":6516540467371189337,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476698778541362%eb5106d8eb5106d8"}]}
+token === dk_WyGEP6y0:APA91bH-ZrxZqXCIb2NPlBlxsyW5jAjJlNAw6Uu7A4cp221DrISwE_ITixRTQ0ViQBD5hE4NlJYuTLUcYnp-m9Dz3BceFMShtSiqjiNCx7YBrjxI2pWyhIgmULc7d0Vhf_KvUG2Vz22T
+token === cEmp9BIIYyw:APA91bFm2T0q_IjRdRboJSSKoHveBP3ZdnOTd7sBUV6SERWBKRhCikts6kypEO3R_aaNfdHt5kyY4qIKvS4EV20-rih865Yf8NUHGXNq6w_P1Hv3blnCeH7xHNSAhdNd2mj5N6Rrymj3
+token === fcYCfB3Bq44:APA91bEcVo8TLK90-_z6OoLxmTuwzQg8Nylfhph_bmXGLwqRGaMtYebGkgCSE_gBgUOuQeYCOf4jswBetq5_-rikzQQv9ZEXAkvtsngH0tA8Uk59iBRfOcdYIWrkhpSF1Y-7yaXton-2
+DB connected
+DB connected
+Something has gone wrong!
+Successfully sent with response:  {"multicast_id":7765454391317294036,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476745203254842%ff5930bbff5930bb"}]}
+Successfully sent with response:  {"multicast_id":7947599471072512153,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476745203250066%eb5106d8eb5106d8"}]}
+Successfully sent with response:  {"multicast_id":5064246631201272849,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476745203285316%ff5930bbff5930bb"}]}
+Successfully sent with response:  {"multicast_id":5797306615592729996,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476745203617723%ff5930bbff5930bb"}]}
+title === 테스트
+msg === 하하하
+fIk-KGiCIQM:APA91bFXZMkonzh2QDYBJwl-1PZJARvYkQfrJEvzezJAeezDyEtC975IkkOa_K4_zQ0fyRkTR5oNZL3lGm6J4zb0pfqqmf9BOjpwA77m2M1lQsEmmrk-lIdwvOiFvZKEfUh46jsRbEtM
+Successfully sent with response:  {"multicast_id":4980487013114590451,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476752342908318%eb5106d8eb5106d8"}]}
+DB connected
+Successfully sent with response:  {"multicast_id":7693980589944256334,"success":1,"failure":0,"canonical_ids":0,"results":[{"message_id":"0:1476752702273874%eb5106d8eb5106d8"}]}
+Server On!
+DB connected
+5001 port Server On!
+DB connected
