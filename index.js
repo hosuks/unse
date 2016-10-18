@@ -18,23 +18,15 @@ db.on("error", function(err){
   console.log("DB ERROR : ", err);
 });
 
-
-
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-function randomRange(n1, n2) {
-  return Math.floor( (Math.random() * (n2 - n1 + 1)) + n1 );
-}
-
 //-- 운세 페이지 크롤링
 app.get("/", function(req, res){
 
-  var intSno = randomRange(100,160);
-  console.log(intSno);
   var url = "http://www.elle.co.kr/lovenlife/Horoscope.asp?MenuCode=en010405&setDate="+moment().format('YYYY-MM-DD');
   var img = new Array();
   var alt = new Array();
