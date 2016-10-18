@@ -4,6 +4,7 @@ var request = require("request");
 var cheerio = require("cheerio");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
+var moment = require("moment");
 
 var Unse = require("./models/Unse");
 
@@ -25,9 +26,16 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
+function randomRange(n1, n2) {
+  return Math.floor( (Math.random() * (n2 - n1 + 1)) + n1 );
+}
+
 //-- 운세 페이지 크롤링
 app.get("/", function(req, res){
-  var url = "http://www.elle.co.kr/lovenlife/Horoscope.asp?MenuCode=en010405";
+
+  var intSno = randomRange(100,160);
+  console.log(intSno);
+  var url = "http://www.elle.co.kr/lovenlife/Horoscope.asp?MenuCode=en010405&setDate="+moment().format('YYYY-MM-DD');
   var img = new Array();
   var alt = new Array();
   var description = new Array();
