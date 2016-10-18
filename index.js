@@ -17,24 +17,7 @@ db.on("error", function(err){
   console.log("DB ERROR : ", err);
 });
 
-var url = "http://www.elle.co.kr/lovenlife/Horoscope.asp?MenuCode=en010405";
-var img = new Array();
-var alt = new Array();
-var description = new Array();
-var termDate;
-request(url, function(error, response, body) {
-  if (error) throw error;
 
-  var $ = cheerio.load(body);
-  var elements = $("div.listType02 ul li");
-  termDate = $("div.listType99 ul li strong");
-
-  elements.each(function(){
-     img.push($(this).find("img").attr('src'));
-     alt.push($(this).find("span.tit img").attr('alt'));
-     description.push($(this).find("span.txt").text());
-  });
-});
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
@@ -42,8 +25,29 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
+//-- 운세 페이지 크롤링
 app.get("/", function(req, res){
-  res.render("main", {img:img, alt:alt, description:description, termDate:termDate});
+  var url = "http://www.elle.co.kr/lovenlife/Horoscope.asp?MenuCode=en010405";
+  var img = new Array();
+  var alt = new Array();
+  var description = new Array();
+  var termDate;
+
+  request(url, function(error, response, body) {
+    if (error) throw error;
+
+    var $ = cheerio.load(body);
+    var elements = $("div.listType02 ul li");
+    termDate = $("div.listType99 ul li strong");
+
+    elements.each(function(){
+       img.push($(this).find("img").attr('src'));
+       alt.push($(this).find("span.tit img").attr('alt'));
+       description.push($(this).find("span.txt").text());
+    });
+
+    res.render("main", {img:img, alt:alt, description:description, termDate:termDate});
+  });
 });
 
 //-- 수동 푸쉬 발송
@@ -53,9 +57,6 @@ app.post("/fcm/send", function(req, res){
   var token = new Array();
   var title = req.body.title;
   var msg = req.body.message;
-
-  console.log('title === ' + title);
-  console.log('msg === ' + msg);
 
   if (title == null || title == '') {
     title = '주간 별자리 운세';
