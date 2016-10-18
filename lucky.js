@@ -25,7 +25,7 @@ app.use(express.static(__dirname + '/public'));
 
 //-- 운세 페이지 크롤링
 app.get("/", function(req, res){
-    var url = "http://www.unsin.co.kr/unse/free/todayline/result";
+    var url = "http://www.unsin.co.kr/unse/free/todayline/result?setDate="+moment().format('YYYY-MM-DD');
     var oneLineArr = new Array();
     var yearsArr = new Array();
     var descriptionArr = new Array();
