@@ -60,7 +60,7 @@ app.get("/", function(req, res){
 //-- Token 저장하기
 app.post("/fcm/register", function(req, res){
   //console.log(req.body.token);
-  Lucky.create(req.body, function(err, lucky){
+  Lucky.create({ token:req.body.token, regDate:moment().format('YYYY-MM-DD HH:mm:ss')}, function(err, lucky){
        if(err) {
          return res.json(err);
        }
