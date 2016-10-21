@@ -107,7 +107,7 @@ app.post("/fcm/send", function(req, res){
 //-- Token 저장하기
 app.post("/fcm/register", function(req, res){
 
-  Unse.create(req.body, function(err, contact){
+  Unse.create({ token:req.body.token, regDate:moment().format('YYYY-MM-DD HH:mm:ss')}, function(err, contact){
       if(err) {
         return res.json(err);
       }
