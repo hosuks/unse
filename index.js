@@ -63,7 +63,7 @@ app.post("/fcm/send", function(req, res){
   }
 
   if (msg == null || msg == '') {
-    msg = '테스트 메세지 입니다.';
+    msg = '한주간의 운세를 확인하세요.';
   }
 
   Unse.find({}, function(err, unse){
@@ -73,7 +73,7 @@ app.post("/fcm/send", function(req, res){
 
     var FCM = require('fcm-node');
 
-    var serverKey = 'AIzaSyDp0xta1drbJbd1HhzxsaSTTZ-xakTM4_I';
+    var serverKey = 'AAAApO_SCLQ:APA91bEGRSyn4hT71PEg4YK90wObTUgMpfxd-lyvaclfNMVdKY2K8EKO5uiY3yaAGihWCUleWZvvp3Tzf5tOfMuHSLtvg2EGHo_8oLyQmSSM6myF7sq7PgxXChDhTpCXy2dBUmSph3PjjvN6ZoNV8KPBokA0OgVcNw';
     var fcm = new FCM(serverKey);
 
     for(var i = 0; i < token.length; i++) {
