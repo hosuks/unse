@@ -95,7 +95,7 @@ app.post("/fcm/send", function(req, res){
 
     var FCM = require('fcm-node');
 
-    var serverKey = 'AIzaSyA4nFElRbVC_p41I2UHfHAtb8FxZWoeZU4';
+    var serverKey = 'AAAAkPBCpNU:APA91bFrWri9JF30fazcHCOCpaVexsRMVOGCp00PFy53lOcZnl40oHExru6zrN7jyIDAh51qlkPOHlnQ9sgfwU1cM4njjc0K7O1XLnu1VD-FlqLZ3BCtAjkJxsJ5Acm0gNUtlqtRreE9';
     var fcm = new FCM(serverKey);
 
     for(var i = 0; i < token.length; i++) {

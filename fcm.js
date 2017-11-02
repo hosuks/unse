@@ -4,7 +4,7 @@ var schedule = require("node-schedule");
 var Unse = require("./models/Unse");
 var FCM = require('fcm-node');
 
-var j = schedule.scheduleJob('0 8 * * 1', function(){
+var j = schedule.scheduleJob('10 08 * * 1', function(){
   mongoose.connect(process.env.MONGO_DB); // 1
   var db = mongoose.connection;
 
@@ -22,7 +22,7 @@ var j = schedule.scheduleJob('0 8 * * 1', function(){
       token.push(data.token);
     });
 
-    var serverKey = 'AIzaSyDp0xta1drbJbd1HhzxsaSTTZ-xakTM4_I';
+    var serverKey = 'AAAApO_SCLQ:APA91bEGRSyn4hT71PEg4YK90wObTUgMpfxd-lyvaclfNMVdKY2K8EKO5uiY3yaAGihWCUleWZvvp3Tzf5tOfMuHSLtvg2EGHo_8oLyQmSSM6myF7sq7PgxXChDhTpCXy2dBUmSph3PjjvN6ZoNV8KPBokA0OgVcNw';
     var fcm = new FCM(serverKey);
 
     for(var i = 0; i < token.length; i++) {

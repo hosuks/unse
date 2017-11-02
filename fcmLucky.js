@@ -4,7 +4,7 @@ var schedule = require("node-schedule");
 var Lucky = require("./models/Lucky");
 var FCM = require('fcm-node');
 
-var j = schedule.scheduleJob('5 8 * * *', function(){
+var j = schedule.scheduleJob('20 08 * * *', function(){
   mongoose.connect(process.env.MONGO_DB); // 1
   var db = mongoose.connection;
 
@@ -22,7 +22,7 @@ var j = schedule.scheduleJob('5 8 * * *', function(){
       token.push(data.token);
     });
 
-    var serverKey = 'AIzaSyA4nFElRbVC_p41I2UHfHAtb8FxZWoeZU4';
+    var serverKey = 'AAAAkPBCpNU:APA91bFrWri9JF30fazcHCOCpaVexsRMVOGCp00PFy53lOcZnl40oHExru6zrN7jyIDAh51qlkPOHlnQ9sgfwU1cM4njjc0K7O1XLnu1VD-FlqLZ3BCtAjkJxsJ5Acm0gNUtlqtRreE9';
     var fcm = new FCM(serverKey);
 
     for(var i = 0; i < token.length; i++) {
