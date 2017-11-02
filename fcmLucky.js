@@ -31,8 +31,8 @@ var j = schedule.scheduleJob('20 08 * * *', function(){
           collapse_key: 'your_collapse_key',
 
           notification: {
-              title: '오늘의 띠별 운세',
-              body: '오늘은 어떤 운세가 기다리고 있을까요?'
+              title: '띠띠운세',
+              body: '오늘은 운세를 확인하세요.'
           },
 
           data: {  //you can send only notification or only data(or include both)
